@@ -139,7 +139,7 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content">HW1 << <a href='HW1.html'>Previous</a> <a href='hw1-2.html'>Next</a> >> hw1-2<br /><h1>hw1-1</h1>
+    <div id="tipue_search_content">Text << <a href='Text.html'>Previous</a> <a href='HW1.html'>Next</a> >> HW1<br /><h1>W13</h1>
 <!-- 導入 brython 程式庫 -->
 <script src="./../cmsimde/static/brython.js"></script>
 <script src="./../cmsimde/static/brython_stdlib.js"></script>
@@ -188,7 +188,7 @@ def run():
     try:
         url = doc.query["src"]
     except:
-        url = "https://gist.githubusercontent.com/41023142/81136acc2e00a701357a5469713a5321/raw/22e364f1be0cd933abe024f51e703d9afa0d0439/%25E5%258A%259F%25E8%25AA%25B2%25E4%25B9%258B1"
+        url = "https://gist.githubusercontent.com/41023142/c6f8032e97de90f0bc5dcf6e4449b0f3/raw/d5f513a920131beacf6461ca3e000c6987ee06e3/W13"
     prog = open(url).read()
 
     # 將程式載入編輯區
@@ -222,7 +222,7 @@ run()
 <!-- 程式執行 ouput 區 -->
 <div style="width: 100%; height: 100%;"><textarea autocomplete="off" id="kw_console"></textarea></div>
 <!-- Brython 程式執行的結果, 都以 brython_div 作為切入位置 -->
-<br />HW1 << <a href='HW1.html'>Previous</a> <a href='hw1-2.html'>Next</a> >> hw1-2</div>
+<div id="brython_div"></div><br />Text << <a href='Text.html'>Previous</a> <a href='HW1.html'>Next</a> >> HW1</div>
         
     <!-- footer -->
       <div class="container">
