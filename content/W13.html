@@ -214,6 +214,19 @@ def chec_inp(ev):
 # id 為 "asd" 的按鈕點按時, 執行 chec_inp 方法
 doc["asd"].bind('click', chec_inp)
 
+number_qwe_url = "https://gist.githubusercontent.com/41023142/c6b8fad61fef9a1c92f0e3f7949ce329/raw/865620a5e20de7bbab9c9f2e4ff89bca5a94e239/%25E7%258C%259C%25E6%2595%25B8%25E5%25AD%2597%25E9%2581%258A%25E6%2588%25B2"
+# 從 gist 取得程式碼
+number_wq = open(number_qwe_url).read()
+
+def number_inp(ev):
+ Ace.editor.setValue(number_wq)
+ Ace.editor.scrollToRow(0)
+ Ace.editor.gotoLine(0)
+ #Ace.run()
+
+# id 為 "number" 的按鈕點按時, 執行number_inp 方法
+doc["number"].bind('click', number_inp)
+
 # 執行程式, 顯示輸出結果與清除輸出結果及對應按鈕綁定
 doc['kw_run'].bind('click', Ace.run)
 doc['kw_show_console'].bind('click', Ace.show_console)
@@ -229,8 +242,9 @@ def w13_inp(ev):
  Ace.editor.gotoLine(0)
  #Ace.run()
 
-# id 為 "w13" 的按鈕點按時, 執行 chec_inp 方法
+# id 為 "w13" 的按鈕點按時, 執行 w13_inp 方法
 doc["w13"].bind('click', w13_inp)
+
 # 呼叫函式執行
 run()
 </script>
@@ -241,9 +255,8 @@ run()
 <!-- 存擋表單開始 --><form><label>Filename: <input id="kw_filename" placeholder="input file name" type="text"/>.py</label> <input onclick="doSave('kw_py_src', 'kw_filename');" type="submit" value="Save"/></form><!-- 存擋表單結束 -->
 <p></p>
 <!-- 執行與清除按鈕開始 -->
-<p><button id="kw_run">Run</button> <button id="kw_show_console">Output</button> <button id="kw_clear_console">清除輸出區</button><button id="clear_bd">清除繪圖區</button><button onclick="window.location.reload()">Reload</button></p>
-<p><button id="asd">w13進階</button></p>
-<p><button id="w13">列出10個座標</button></p>
+<p><button id="kw_run">Run</button> <button id="kw_show_console">Output</button> <button id="kw_clear_console">清除輸出區</button> <button id="clear_bd">清除繪圖區</button> <button onclick="window.location.reload()">Reload</button></p>
+<p><button id="asd">w13進階</button> <button id="w13">列出10個座標</button> <button id="number">猜數字遊戲</button></p>
 <!-- 執行與清除按鈕結束 -->
 <p></p>
 <!-- 程式執行 ouput 區 -->
