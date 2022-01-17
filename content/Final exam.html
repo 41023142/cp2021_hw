@@ -188,7 +188,7 @@ def run():
     try:
         url = doc.query["src"]
     except:
-        url = "https://gist.githubusercontent.com/mdecourse/e896a4705a95ac8cc4147b355b0e87ef/raw/8954b8280c524c5781dc3c0b3565bc489d3aa3a3/cango_gear1.py"
+        url = "https://gist.githubusercontent.com/41023142/24dc39d0ee965315ae6a7a21d1958b43/raw/a042a0fa6b48562b28c506169dbe1d4a3dfbac03/NONE"
     prog = open(url).read()
 
     # 將程式載入編輯區
@@ -214,7 +214,7 @@ run()
 <script type="text/python3">
 import beditor
 from browser import document
-url = "https://gist.githubusercontent.com/41023142/a3ad113d5f943da0d166f960c53fc09f/raw/92e6b3376d717fde91dcf1dc1086523af02d3614/final3-1"
+url = "https://gist.githubusercontent.com/41023142/55b6927f846f06054befced597c6a996/raw/a5f7150a002b38ad696d5ec4f816503c2dc081d8/3-2"
 src = open(url).read()
 DE = beditor.editor(src, "kw_editor", "kw_console", "kw__container", "kw_py_src")
 document["DE"].bind("click",DE.prog)
@@ -234,10 +234,50 @@ document["FN"].bind("click", FN.prog)
 <script type="text/python3">
 import beditor
 from browser import document
-url = "https://gist.githubusercontent.com/41023142/780c8c87d4f86baff9554da96ef70e7b/raw/8f9d50d6dc10e28817b4a616d82fe93d9596519a/final3"
+url = "https://gist.githubusercontent.com/41023142/72934b839924c160d96be20570b73140/raw/dde48ef79cce8879a57a67e9107bea876f217464/3-1"
 src = open(url).read()
 FN = beditor.editor(src, "kw_editor", "kw_console", "kw__container", "kw_py_src")
 document["FN"].bind("click", FN.prog)
+</script>
+</p>
+<p>
+<script type="text/python3">
+import beditor
+from browser import document
+url = "https://gist.githubusercontent.com/41023142/11d1228fbc763ff68c12410272de0982/raw/fc74553ee7afe0a8b388fe966f9ba9b8304356a1/3-4"
+src = open(url).read()
+GH = beditor.editor(src, "kw_editor", "kw_console", "kw__container", "kw_py_src")
+document["GH"].bind("click", GH.prog)
+</script>
+</p>
+<p>
+<script type="text/python3">
+import beditor
+from browser import document
+url = "https://gist.githubusercontent.com/41023142/13093e59c66e4ab172c3f73705523950/raw/897d40c9e96dee8623a50f8f5cd4ba51281decab/3-5"
+src = open(url).read()
+SD = beditor.editor(src, "kw_editor", "kw_console", "kw__container", "kw_py_src")
+document["SD"].bind("click", SD.prog)
+</script>
+</p>
+<p>
+<script type="text/python3">
+import beditor
+from browser import document
+url = "https://gist.githubusercontent.com/41023142/7cb837f5cda98f22daf4beaf5d000c10/raw/8301b3d222a7cd27d728eb5c3a8571d8e028a60e/3-6"
+src = open(url).read()
+XC = beditor.editor(src, "kw_editor", "kw_console", "kw__container", "kw_py_src")
+document["XC"].bind("click", XC.prog)
+</script>
+</p>
+<p>
+<script type="text/python3">
+import beditor
+from browser import document
+url = "https://gist.githubusercontent.com/41023142/426a5e4249e6c0aa6dccbf595af8f1ed/raw/d7afc49b36b1586e41806352c8f38a3385ac6c23/3-3"
+src = open(url).read()
+KN = beditor.editor(src, "kw_editor", "kw_console", "kw__container", "kw_py_src")
+document["KN"].bind("click", KN.prog)
 </script>
 </p>
 <p><!-- 用來顯示程式碼的 editor 區域 --></p>
@@ -247,7 +287,7 @@ document["FN"].bind("click", FN.prog)
 <p></p>
 <!-- 執行與清除按鈕開始 -->
 <p><button id="kw_run">Run</button> <button id="kw_show_console">Output</button> <button id="kw_clear_console">清除輸出區</button> <button id="clear_bd">清除繪圖區</button> <button onclick="window.location.reload()">Reload</button></p>
-<p><button id="FN">final3逆時針</button> <button id="DE">final3順時針</button> <!-- 執行與清除按鈕結束 --></p>
+<p><button id="FN">final3-1</button> <button id="DE">final3-2</button> <button id="KN">final3-3</button> <button id="GH">final3-4</button> <button id="SD">final3-5</button> <button id="XC">final3-6</button><!-- 執行與清除按鈕結束 --></p>
 <p></p>
 <p><!-- 程式執行 ouput 區 --></p>
 <div style="width: 100%; height: 100%;"><textarea autocomplete="off" id="kw_console"></textarea></div>
